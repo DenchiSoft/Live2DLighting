@@ -1,5 +1,5 @@
 # Live2DLighting
-Experiments with Live2D models and lighting.
+Experiments with Live2D models and lighting/post-processing.
 
 ## Example
 See [this video](https://www.youtube.com/watch?v=Yj6OkmbFB2A) (https://www.youtube.com/watch?v=Yj6OkmbFB2A) for a few example scenes created with the effects contained in this repository.
