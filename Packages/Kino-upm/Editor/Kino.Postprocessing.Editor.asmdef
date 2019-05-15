@@ -1,0 +1,14 @@
+{
+    "name": "Kino.Postprocessing.Editor",
+    "references": [
+        "Kino.Postprocessing",
+        "Unity.Postprocessing.Editor",
+        "Unity.Postprocessing.Runtime"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}
