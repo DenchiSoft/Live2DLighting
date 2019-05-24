@@ -4,8 +4,9 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: LiberationSans SDF - Metalic Green
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
   m_ShaderKeywords: BEVEL_ON GLOW_ON OUTLINE_ON UNDERLAY_ON
@@ -67,8 +68,8 @@ Material:
     - _PerspectiveFilter: 0
     - _Reflectivity: 12.76
     - _ScaleRatioA: 0.9
-    - _ScaleRatioB: 0.6525
-    - _ScaleRatioC: 0.6525
+    - _ScaleRatioB: 0.59624994
+    - _ScaleRatioC: 0.59624994
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0

@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/SenkoNormalMapped.unity
+    guid: 971dfbd1dcd055f49bc0ba4e44630ec3
+  - enabled: 1
+    path: Assets/Scenes/NormalMapScene.unity
+    guid: 3ccc63469be88774bbdc69f54cffefb0
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: ca896850850b59f4eb5870f12c089c4d
   m_configObjects: {}
