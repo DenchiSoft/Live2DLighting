@@ -3,7 +3,10 @@ Experiments with Live2D models and lighting/post-processing.
 
 ## Example
 See [this video](https://www.youtube.com/watch?v=Yj6OkmbFB2A) (https://www.youtube.com/watch?v=Yj6OkmbFB2A) for a few example scenes created with the effects contained in this repository.
+
 ![Screenshot](https://raw.githubusercontent.com/DenchiSoft/Live2DLighting/master/img/preview.png "Screenshot")
+![Screenshot](https://raw.githubusercontent.com/DenchiSoft/Live2DLighting/master/img/lighting_simple.gif "Screenshot")
+
 
 ## A note on the models
 There are two models in the scene, both being rendered to separate RenderTextures. The first one is just the model with the regular model texture. The second model is used for rendering to a RenderTexture that will be used as a normal map. For this second model, the idea would be to replace the regular model texture with a texture containing normals. Such a texture could be manually created with a program such as [SpriteIlluminator](https://www.codeandweb.com/spriteilluminator). 
