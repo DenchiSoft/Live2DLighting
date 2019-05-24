@@ -18,6 +18,11 @@ There are two models in the scene, both being rendered to separate RenderTexture
 
 For this second model, the regular texture has been replaced with a texture containing the normals. Such a texture can be manually created with a program such as [SpriteIlluminator](https://www.codeandweb.com/spriteilluminator) or any graphics software like Photoshop or Sai.
 
+
+
+![Normal Map](https://raw.githubusercontent.com/DenchiSoft/Live2DLighting/master/img/parts_normal_map.png "Normal Map")
+
+
 ## License
 [MIT License](https://github.com/DenchiSoft/Live2DLighting/blob/master/LICENSE)
 
