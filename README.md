@@ -26,4 +26,5 @@ For this second model, the regular texture has been replaced with a texture cont
 ## License
 [MIT License](https://github.com/DenchiSoft/Live2DLighting/blob/master/LICENSE)
 
-Contains components from [Kino](https://github.com/keijiro/Kino) by Keijiro Takahashi, also released under MIT license.
+Contains components from [Kino](https://github.com/keijiro/Kino) by Keijiro Takahashi, also released under MIT license.<br/>
+Contains components from the Live2D Unity SDK, see ["Live2D License"](https://github.com/DenchiSoft/Live2DLighting/blob/master/Assets/Live2D/Cubism/License.txt).
