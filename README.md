@@ -16,7 +16,7 @@ See [this video](https://www.youtube.com/watch?v=Yj6OkmbFB2A) (https://www.youtu
 ## A note on the models
 There are two models in the scene, both being rendered to separate RenderTextures. The first one is just the model with the regular model texture. The second model is used for rendering to a RenderTexture that will be used as a normal map. 
 
-For this second model, the regular texture has been replaced with a texture containing the normals. Such a texture can be manually created with a program such as [SpriteIlluminator](https://www.codeandweb.com/spriteilluminator) or any graphics software like Photoshop or Sai.
+For this second model, the regular texture has been replaced with a texture containing the normals. Such a texture can be manually created with any graphics software like Photoshop or Sai, or specialized software such as [SpriteIlluminator](https://www.codeandweb.com/spriteilluminator).
 
 
 
