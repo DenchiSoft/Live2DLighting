@@ -4,6 +4,8 @@ Experiments with Live2D models and lighting/post-processing. :sparkles:
 ## Example
 See [this video](https://www.youtube.com/watch?v=Yj6OkmbFB2A) (https://www.youtube.com/watch?v=Yj6OkmbFB2A) for a few example scenes created with the effects contained in this repository.
 
+WebGL Demo: https://denchi.itch.io/live2d-webgl-lighting-test
+
 ![Screenshot](https://raw.githubusercontent.com/DenchiSoft/Live2DLighting/master/img/preview.png "Screenshot")
 ![Screenshot](https://raw.githubusercontent.com/DenchiSoft/Live2DLighting/master/img/lighting_simple.gif "Screenshot")
 
