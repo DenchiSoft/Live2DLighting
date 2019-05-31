@@ -1,17 +1,17 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
 using Live2D.Cubism.Core;
 using Live2D.Cubism.Rendering;
 using UnityEditor;
 using UnityEngine;
 
 /// <summary>
-/// Replace active Live2D model texture temporarily
+/// Replace active Live2D model texture(s) temporarily
 /// at runtime or permanently in editor.
 /// </summary>
 public class CubismTextureReplacer : MonoBehaviour
 {
     public CubismModel model;
-    public Texture2D newTexture;
+    public List<Texture2D> newTextures;
 
 #if UNITY_EDITOR
     [CustomEditor(typeof(CubismTextureReplacer))]
@@ -23,7 +23,7 @@ public class CubismTextureReplacer : MonoBehaviour
 
             var textureReplacer = target as CubismTextureReplacer;
 
-            if (textureReplacer != null && GUILayout.Button("Replace model texture"))
+            if (textureReplacer != null && GUILayout.Button("Replace model texture(s)"))
             {
                 textureReplacer.Reload();
             }
@@ -35,21 +35,26 @@ public class CubismTextureReplacer : MonoBehaviour
     {
         if (model != null)
         {
-            if (newTexture != null) { 
-                foreach (var drawable in model.Drawables.ToList())
+            if (newTextures != null && newTextures.Count != 0)
+            {
+                int replacedCount = 0;
+
+                foreach (var drawable in model.Drawables)
                 {
                     CubismRenderer r = drawable.gameObject.GetComponent<CubismRenderer>();
+                    bool hasTextureForDrawable = drawable.TextureIndex < newTextures.Count && newTextures[drawable.TextureIndex] != null;
 
-                    if (r != null) { 
-                        r.MainTexture = newTexture;
+                    if (r != null && hasTextureForDrawable) {
+                        r.MainTexture = newTextures[drawable.TextureIndex];
+                        replacedCount++;
                     }
                 }
 
-                Debug.Log("Replaced texture for model \"" + model.name + "\" (" + model.Drawables.Length + " drawables).");
+                Debug.Log("Replaced textures for model \"" + model.name + "\" (" + replacedCount + "/" + model.Drawables.Length + " drawables).");
             }
             else
             {
-                Debug.Log("Set replacement texture first.");
+                Debug.Log("Set replacement texture(s) first.");
             }
         }
         else
